@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EcoFinder Kenya :: Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+                <div id="sidebar-wrapper">
+                    <ul class="sidebar-nav">
+                        <li class="active">MENU</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                     <ul class="social-icons">
+                        <a href="#"><li><img src="images/fb.png" alt="facebook" height="50" width="50"></li></a>
+                        <a href="#"><li><img src="images/twitter.png" alt="twitter" height="50" width="50"></li></a>
+                        <a href="#"><li><img src="images/blog.png" alt="twitter" height="50" width="50"></li></a>
+                    </ul>
+                </div>
+                
+                <div id="main-content">
+                    <div class="conatainer-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="#"><img src="images/menu.png" id="toggleMenu"></a>
+                                <div class="top">
+                                    <img src="images/logo.jpg" height="65px" width="65px" class="logo">
+                                    <h3>ENVIRONMENTAL ENTERPRENEURSHIP FOR SUSTAINABLE COMMUNITIES</h3>
+                                    <a href="#"><img src="images/search.png" height="30px" width="30px" class="search"></a>
+                                </div><!--//Top-->
+                            </div>
+                        </div><!--//Row-->
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!--Slider-->
+                                <div id="slider" class="carousel slide"k',Lj  i>
+                                    <div class="carousel-inner">
+                                        
+                                        <div class="item active">
+                                            <img src="images/slider/1.jpg" class="img-responsive">
+                                            <div class="carousel-caption">
+                                                <h3>Lake Victoria is alive</h3>
+                                                <p>Kenya Lake Victoria Water keeper is alive and kicking</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--//Slider-->
+                            </div><!--//Column-->
+                        </div><!--//Row-->
+                        
+                        <div id="calltoaction">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2>BE THE CHANGE YOU WANT TO SEE. SUPPORT US!</h2>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="#"><img src="images/volunteer.png" height="250" width="250"></a>
+                                </div><!--//Col-->
+                                
+                                <div class="col-md-6">
+                                    <a href="#"><img src="images/donate.png" height="250" width="300"></a>
+                                </div><!--//Col-->
+                                
+                            </div><!--//Row-->
+                        </div><!--//-->
+                    </div><!--//Fluid container-->
+                </div>
+        </div><!--//Wrapper-->
+        <script>
+            $("#toggleMenu").click(function(event){
+               event.preventDefault();
+               $("#wrapper").toggleClass("displayMenu");
+            });
+        </script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>

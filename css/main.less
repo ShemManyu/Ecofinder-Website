@@ -1,0 +1,87 @@
+// Width variables (appears count calculates by raw css)
+@width1: 100%; // Appears 2 times
+
+
+#sidebar-wrapper {
+	background-color: #2C3E50;
+	display: block;
+	height: 100%;
+	list-style: none;
+	overflow-y: hidden;
+	position: absolute;
+	width: 0;
+	z-index: 1;
+}
+.sidebar-nav {
+	list-style: none;
+	padding: 0;
+	li {
+		border-bottom: 1px solid black;
+		display: block;
+		line-height: 50px;
+		text-align: center;
+		a {
+			color: white;
+			font-size: 20px;
+			text-decoration: none;
+		}
+		&:hover {
+			background-color: green;
+		}
+	}
+	.active {
+		background-color: green;
+		color: white;
+		font-size: 25px;
+		width: auto;
+	}
+}
+#wrapper.displayMenu {
+	#sidebar-wrapper {
+		width: 200px;
+	}
+	#main-content {
+		padding-left: 200px;
+	}
+}
+#toggleMenu {
+	margin-left: 10px;
+	margin-top: 10px;
+	position: fixed;
+}
+.social-icons {
+	padding-left: 20px;
+	li {
+		display: inline;
+	}
+}
+.top {
+	background-color: azure;
+	display: -webkit-flex;
+	display: flex;
+	width: @width1;
+	h3 {
+		margin: auto;
+	}
+}
+.logo {
+	margin-left:5em;
+}
+.search {
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.item {
+	img {
+		max-height: 700px;
+		width: @width1;
+	}
+}
+.carousel-caption {
+	background-color:green;
+	opacity: 0.5;
+	h3 {
+		opacity: 1;
+	}
+}
