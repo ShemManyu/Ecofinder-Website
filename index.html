@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
         <script src="js/jquery-1.11.1.min.js"></script>
     </head>
     <body>
@@ -39,77 +40,109 @@
                         
                         <div class="row">
                             <div class="col-md-12">
-                                <!--Slider-->
-                                <div id="slider" class="carousel slide">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img src="images/slider/1.jpg" class="img-responsive">
-                                            <div class="carousel-caption">
-                                                <h3>Lake Victoria is alive</h3>
-                                                <p>Kenya Lake Victoria Water keeper is alive and kicking</p>
+                                <!--banner-->
+                                <div class="banner">
+                                        <script src="js/responsiveslides.min.js"></script>
+                                        <script>
+                                                $(function () {
+                                                $("#slider").responsiveSlides({
+                                                    auto: true,
+                                                    nav: false,
+                                                    speed: 500,
+                                                    namespace: "callbacks",
+                                                    pager: true,
+                                                });
+                                                });
+                                        </script>
+                                        <div class="slider">
+                                            <div class="callbacks_container">
+                                                <ul class="rslides" id="slider">
+                                                    <li>	          
+                                                        <h2>Lorem is so Cool</h2>
+                                                        <h3>Maecenas dignissim nibh.</h3>
+                                                    </li>
+                                                    <li>	          
+                                                        <h2>Lighting the community</h2>
+                                                        <h3>Fusce vel lacus dapibus.</h3>
+                                                    </li>
+                                                    <li>	          
+                                                        <h2>Get involved in the change</h2>		
+                                                        <h3>Aenean maximus in sem.</h3>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
-                                    </div>
-                                </div><!--//Slider-->
+                                    <!----->
+                                </div>
+                                <!--//banner-->
                             </div><!--//Column-->
                         </div><!--//Row-->
                     </div><!--//Fluid container-->
 
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="about">
                             <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <h3>ABOUT US</h3>
+                                </div>
+                            </div><!--//Row-->
+                            
+                            <div class="row">
                                 <div class="col-md-7">
-                                    <h3>ABOUT US</h3>  
                                     <p> Ecofinder Kenya is a Community Based Organization (CBO) founded in 1995 and registered as Ecofinder Youth Group by Department of Social Services and Development, Republic of Kenya as a self-help group. Ecofinder Kenya is a vibrant, innovative and grass-root-based organization spearheading initiatives for sustainable communities around Lake Victoria Basin, Kenya. Our interventions include research and monitoring, landscape rehabilitation, entrepreneurship, capacity building and training, conservation education and advocacy, leadership incubation and nurturing, promotion of good governance and peace at grass-root level and preventive health education.
                                     Ecofinder was formed by like-minded young people residing in shanties of Kisumu who were touched and moved by myriad problems (State of affairs) affecting them and other young people in the slums and beyond; idleness and unemployment, substance abuse, school drop-outs, unwanted pregnancies, unhealthy boy-girl relationships, peer influence/ pressure, sexually transmitted infections and other ailments, environmental mismanagement, street urchins, orphans, lack of basic needs inter alia. Therefore, the pioneer members decided to initiate this self-help project (CBO) to mobilize the young people to take a proactive role in ameliorating the aforementioned state of affairs. Ecofinder Kenya operates on the principle of integrated or holistic approach in tackling the myriad problems:
                                     </p>
                                 </div>
 
                                 <div class="col-md-5">
-                                    <img src="images/flash01.jpg" alt="About EcoFinder" class="img-rounded" width="300" height="200">
+                                    <img src="images/flash01.jpg" alt="About EcoFinder" class="img-rounded img-responsive" width="500" height="300">
                                 </div>
                                 
                             </div><!--//Row-->
                         </div><!--//About-->
                     </div><!--//Container-->
                     
-                    <div class="container-fluid">
+                    <div class="container">
                         <div class="statements">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <h2>OUR MISSION</h2>
+                                    <h2>Our Mission</h2>
                                 </div>
                             </div><!--//Row-->
-                             <div class="row">
+                             <div class="row vertical-align">
                                  <div class="col-xs-6">
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                                         sed do eiusmod tempor incididunt ut labore et dolore magna
-                                         aliqua. Ut enim ad minim veniam, 
-                                         quis nostrud exercitation ullamco laboris
+                                        <p style="text-align: right"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</strong><br>
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, 
+                                        quis nostrud exercitation ullamco laboris
                                     </p>
                                  </div>
 
                                  <div class="col-xs-6">
-                                     <img src="images/mission.png" class="img-responsive" alt="Our Mission" height="250" width="250">
+                                     <div class="centerBlock">
+                                        <img src="images/mission.png" class="img-responsive" alt="Our Mission" height="250" width="250">    
+                                     </div>
                                  </div>
                              </div><!--//Row-->
 
                               <div class="row">
                                 <div class="col-xs-12">
-                                    <h2>OUR VISSION</h2>
+                                    <h2>Our Vission</h2>
                                 </div>
                             </div><!--//Row-->
-                             <div class="row">
+                             <div class="row vertical-align">
 
                                  <div class="col-xs-6">
-                                     <img src="images/vision.png" class="img-responsive" alt="Our Mission" height="250" width="250">
+                                     <div class="centerBlock">
+                                        <img src="images/vision.png" class="img-responsive" alt="Our Mission" height="250" width="250">    
+                                     </div>
                                  </div>
 
                                  <div class="col-xs-6">
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                                         sed do eiusmod tempor incididunt ut labore et dolore magna
-                                         aliqua. Ut enim ad minim veniam, 
-                                         quis nostrud exercitation ullamco laboris
+                                         <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</strong><br>
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, 
+                                        quis nostrud exercitation ullamco laboris
                                     </p>
                                  </div>
 
@@ -121,36 +154,137 @@
                         <div class="calltoaction">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h2>BE THE CHANGE YOU WANT TO SEE. SUPPORT US!</h2>
+                                    <h2>BE THE CHANGE YOU WANT TO SEE<br>SUPPORT US!</h2>
                                 </div>
                             </div>
                             
                             <div class="row">
                                 <div class="col-xs-6">
-                                    <div class="center-block">
-                                        <a href="#"><img src="images/volunteer.png" class="img-responsive" height="250" width="250"></a>    
+                                    <div class="centerBlock">
+                                        <div class="center-block">
+                                            <a href="#"><img src="images/volunteer.png" class="img-responsive jump" height="250" width="250"></a>    
+                                        </div>
+                                        <h2>VOLUNTEER</h2>
+                                        <p>Help us by signing up for our programs</p>
                                     </div>
-                                    <h2>DONATE</h2>
                                 </div><!--//Col-->
                                 
                                 <div class="col-xs-6">
-                                    <a href="#"><img src="images/donate.png" class="img-responsive" height="250" width="325"></a>
-                                    <h2>VOLUNTEER</h2>
+                                    <div class="centerBlock">
+                                        <a href="#"><img src="images/donate.png" class="img-responsive jump" height="250" width="325"></a>
+                                        <h2>DONATE</h2>
+                                        <p>Support us by sending your gifts or donations</p>    
+                                    </div>
                                 </div><!--//Col-->
                                 
                             </div><!--//Row-->
                         </div><!--//Call to Action-->
                     </div><!--//Fluid container-->
-
+                    <div class="partners">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12 col-xs-12 col-lg-12">
+                                    <h2>OUR PARTNERS</h2>    
+                                </div>
+                            </div><!--//Row-->
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <ul class="icons">
+                                        <a href="#"><li><img src="images/partners/1.png" alt="Our Partner"></li></a>
+                                        <a href="#"><li><img src="images/partners/2.png" alt="Our Partner"></li></a>
+                                        <a href="#"><li><img src="images/partners/3.png" alt="Our Partner"></li></a>
+                                        <a href="#"><li><img src="images/partners/4.png" alt="Our Partner"></li></a>
+                                    </ul>
+                                </div><!--//Col-->
+                            </div><!--//Row-->
+                        </div><!--//Fluid container-->
+                    </div><!--//Partners-->
+                    <div class="contaner-fluid">
+                        <div class="contact">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <h2>CONTACT US</h2>
+                                </div><!--//Col-->
+                            </div><!--//Row-->
+                            <div class="row">
+                                <div class="col-md-4 col-lg-4">
+                                    <h3>Drop us a Message</h3>
+                                    <form>
+                                        <input type="text" name="name" placeholder="Name" required>
+                                        <input type="email" name="email" placeholder="Email" required>
+                                        <textarea placeholder="Message" required></textarea>
+                                        <input type="submit" value="Send">
+                                    </form>
+                                </div><!--//Col-->
+                                <div class="col-md-4 col-lg-4">
+                                    <div id="map"></div>
+                                </div><!--//Col-->
+                                <div class="col-md-4 col-lg-4">
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                          <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>  
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text">
+                                            <ul>
+                                                <li>+254712345678</li>
+                                                <li>+254712345678</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                            <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                            <ul class="address text">
+                                                <li>Dunga Wetland Centre</li>
+                                                <li>Kisumu, Kenya</li>
+                                            </ul>
+                                        </div>
+                                    </div><!--//Row-->
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                            <span class="glyphicon glyphicon-envelope"></span>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text">
+                                            <a href="mailto:info@ecofinder.ke">info@ecofinder.ke</a>
+                                        </div>
+                                    </div>
+                                </div><!--//Col-->
+                            </div><!--//Row-->
+                        </div>
+                    </div><!--//Fluid container-->
                     <footer class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12">
-                                <p>Copyright 2016</p>
+                                <p>Copyright 2016 | All rights reserved</p>
                             </div>
                         </div>
                     </footer>                 
                 </div><!--//Main content-->
         </div><!--//Wrapper-->
+        <!--Map-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJXDoLRPcYfgUyEkjlKJvfImq2PM_ZvG8&callback=initMap"
+    async defer></script>
+        <script>
+            function initMap() {
+            var myLatLng = {lat: -0.1389642, lng: 34.7385116};
+
+            // Create a map object and specify the DOM element for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                scrollwheel: false,
+                zoom: 4
+            });
+
+            // Create a marker and set its position.
+            var marker = new google.maps.Marker({
+                map: map,
+                position: myLatLng,
+                title: 'Here We are'
+            });
+            }
+        </script>
         <script>
             $("#toggleMenu").click(function(event){
                event.preventDefault();

@@ -1,6 +1,23 @@
+@font-face {
+  font-family: 'Halflings-Regular';
+  src: url(../fonts/glyphicons-halflings-regular.ttf);
+}
+@font-face {
+  font-family: 'Dosis-Medium';
+  src: url(../fonts/Dosis-Regular.ttf);
+}
+body {
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+p {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.5em;
+}
 #sidebar-wrapper {
   background-color: #2C3E50;
-  display: block;
+  display: none;
   height: 100%;
   list-style: none;
   position: absolute;
@@ -41,6 +58,7 @@
 #wrapper.displayMenu #sidebar-wrapper {
   width: 200px;
   position: fixed;
+  display: block;
 }
 #wrapper.displayMenu #main-content {
   padding-left: 200px;
@@ -49,10 +67,11 @@
   margin-left: 10px;
   margin-top: 10px;
   position: fixed;
+  z-index: 1;
 }
 .social-icons {
   padding-left: 20px;
-  vertical-align: bottom;
+  margin-bottom: 0;
 }
 .social-icons li {
   display: inline;
@@ -67,6 +86,7 @@
   margin: auto;
   font-weight: bold;
   font-size: 40px;
+  font-family: 'Dosis-Medium';
 }
 .logo {
   margin-left: 5em;
@@ -76,37 +96,227 @@
   margin-right: 10px;
   margin-top: 10px;
 }
-.item img {
-  max-height: 700px;
+/*Slider*/
+.banner {
+  background: url(../images/bulb.jpg) no-repeat center 0px;
+  min-height: 700px;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  padding-top: 20em;
+}
+.slider {
+  position: relative;
+  text-align: center;
+}
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
   width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Halflings-Regular';
+  font-weight: bold;
 }
-.carousel-caption {
-  background-color: green;
-  opacity: 0.5;
+.rslides h2 {
+  color: #fff;
+  font-size: 5em;
+  width: 92%;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.carousel-caption h3 {
-  opacity: 1;
+.rslides h3 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 1em;
+  text-transform: uppercase;
 }
-.about p {
-  border: 1px solid green;
-  font-size: 20px;
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+.callbacks_tabs a:after {
+  content: "\f111";
+  font-size: 0;
+  font-family: FontAwesome;
+  visibility: visible;
+  display: block;
+  height: 11px;
+  width: 11px;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #fff;
+}
+.callbacks_tabs a {
+  visibility: hidden;
+}
+.callbacks_tabs li {
+  display: inline-block;
+}
+.callbacks_here a:after {
+  border: 2px solid #FFF;
+  background: transparent;
+}
+ul.callbacks_tabs.callbacks1_tabs {
+  position: absolute;
+  bottom: -100%;
+  z-index: 999;
+  left: 44%;
+}
+/*End of Slider. Start of body*/
+.centerBlock {
+  display: table;
+  margin: 0 auto;
+  float: none;
+}
+.vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+.vertical-align > [class^="col-"],
+.vertical-align > [class="col-"] {
+  display: flex;
+  /* Align the flex-items vertically*/
+  justify-content: center;
+  /*Align inner flex-items horizontally within the column*/
+  vertical-align: middle;
+}
+.about {
+  padding: 20px;
+}
+.about h3 {
+  font-family: 'Dosis-Medium';
+  font-weight: bold;
+  color: green;
+}
+.statements {
+  font-family: 'Dosis-Medium';
+  padding-bottom: 3em;
 }
 .statements h2 {
   text-align: center;
+  color: green;
 }
 .statements p {
-  border: 2px solid green;
+  margin: 2.7em 0 0.5em 0;
+  font-size: 1.3em;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+}
+.statements p:hover {
+  font-size: 1.5em;
 }
 .calltoaction {
   background-color: limegreen;
-}
-.calltoaction h2 {
+  font-family: 'Dosis-Medium';
   text-align: center;
+  color: white;
+}
+.calltoaction p {
+  color: white;
+  font-size: 1.2em;
+}
+.partners h2 {
+  text-align: center;
+  color: green;
+  font-family: 'Dosis-Medium';
+}
+.partners ul {
+  list-style: none;
+}
+.partners li {
+  display: inline;
+}
+.partners img {
+  max-height: 200px;
+  max-width: 300px;
+  padding: 0 50px;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.5s;
+}
+.partners img:hover {
+  max-height: 300px;
+  max-width: 400px;
+}
+.contact {
+  margin: 10px;
+}
+.contact h2 {
+  text-align: center;
+  font-family: 'Dosis-Medium';
+  color: green;
+}
+.contact form {
+  display: block;
+}
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  outline: none;
+  width: 100%;
+  padding: 12px 10px;
+}
+.contact textarea {
+  margin: 0 0 0.2em;
+  min-height: 150px;
+  resize: none;
+}
+.contact input[type="email"] {
+  margin: 0.5em 0;
+}
+.contact input[type="submit"] {
+  width: 100%;
+  margin: auto;
+  min-height: 35px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+}
+.contact input[type="submit"]:hover {
+  background-color: white;
+  color: green;
+  border: 2px solid green;
+}
+.contact ul {
+  list-style: none;
+}
+.contact li,
+.contact a {
+  font-size: 1.5em;
+}
+.contact .address {
+  margin: 2em 0;
+}
+.contact span {
+  font-size: 2em;
+  float: right;
+}
+.contact .text {
+  font-family: 'sans-serif';
+  text-align: left;
+}
+#map {
+  height: 100%;
+  width: 100%;
 }
 footer {
-  background-color: #2C3E50;
-  color: white;
+  background-color: #3d3b3b;
 }
 footer p {
   text-align: center;
+  color: white;
 }

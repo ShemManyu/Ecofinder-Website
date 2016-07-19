@@ -1,0 +1,22 @@
+@keyframes jump{
+    0%, 100%{
+        -webkit-transform-origin-y: 0;
+        -ms-transform-origin-y: 0;
+    }
+    10%, 30%, 50%, 70%, 90%{
+        -webkit-transform-origin-y: 10px;
+        -ms-transform-origin-y: 10px;
+        transform: translateY(10px);
+    }
+    20%, 40%, 60%, 80%{
+        -webkit-transform-origin-y: -10px;
+        -ms-transform-origin-y: -10px;
+        transform: translateY(-10px);
+    }
+}
+.jump:hover{
+    -webkit-animation-name: jump;
+    animation-name: jump;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
