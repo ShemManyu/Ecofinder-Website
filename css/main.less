@@ -104,7 +104,7 @@ p{
 /*Slider*/
 .banner{
 	background: url(../images/bulb.jpg)no-repeat center 0px;
-	min-height: 700px;
+	height: 700px;
 	background-size: cover;
 	position: relative;
 	text-align: center;
@@ -129,7 +129,7 @@ p{
 		font-size: 5em;
 		width: 92%;
 		margin: 0 auto;
-		letter-spacing: 2px;
+		letter-spacing: 0;
 		text-transform: uppercase;
 	}
  	h3{
@@ -200,14 +200,14 @@ ul.callbacks_tabs.callbacks1_tabs {
         justify-content: center;/*Align inner flex-items horizontally within the column*/
         vertical-align: middle;
     }
-    .about{
-        padding: 20px;
-		h3{
-			font-family: 'Dosis-Medium';
-			font-weight: bold;
-			color: @maincolor;
-		}
-    }
+.about{
+	padding: 20px;
+	h3{
+		font-family: 'Dosis-Medium';
+		font-weight: bold;
+		color: @maincolor;
+	}
+}
 .statements{
 	font-family: 'Dosis-Medium';
 	padding-bottom: 3em;
@@ -235,6 +235,12 @@ ul.callbacks_tabs.callbacks1_tabs {
 		color: white;
 		font-size: 1.2em;
 	}
+	.modal{
+		color: black;
+		p{
+			color: black;
+		}
+	}
 }
 .partners{
 	h2{
@@ -253,10 +259,9 @@ ul.callbacks_tabs.callbacks1_tabs {
 		max-width: 300px;
 		padding: 0 50px;
 		transition: 0.5s;
-		-webkit-transition-delay: 0.5s;
+		vertical-align: middle;
 		&:hover{
-			max-height: 300px;
-			max-width: 400px;
+			transform: translateY(10px);
 		}
 	}
 }
@@ -277,7 +282,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 	}
 	textarea{
 		margin: 0 0 0.2em;
-		min-height: 150px;
+		height: 150px;
 		resize: none;
 	}
 	input[type="email"]{
@@ -286,7 +291,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 	input[type="submit"]{
 		width: 100%;
 		margin: auto;
-		min-height: 35px;
+		height: 35px;
 		border: none;
 		outline: none;
 		background-color: @maincolor;
@@ -317,12 +322,81 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 #map {
         height: 100%;
-		width: 100%;
+		position: absolute;
       }
 footer{
-	background-color: rgb(61, 59, 59);
+	background-color: #333;
 	p{
 		text-align: center;
 		color: white;
+	}
+}
+/*Responsive design*/
+@media (max-width: 991px){
+	.logo{
+		max-height:40px;
+		max-width: 40px;
+	}
+	.banner{
+		max-width: 991px;
+	}
+	.contact{
+		margin: 50px;
+	}
+}
+@media (max-width: 480px){
+	.top{
+		h3{
+			font-size: 30px;
+		}
+	}
+	.about{
+		p{
+			font-size: 15px;	
+		}
+	}
+	.search{
+		max-height: 20px;
+		max-width: 20px;
+		margin-left: 0;
+	}
+	#toggleMenu{
+		max-height: 20px;
+		max-width: 20px;
+	}
+	.logo{
+		margin-left: 3em;
+	}
+	.banner{
+		max-width: 480px;
+		max-height: 300px !important;
+		padding-top: 6em;
+	}
+	.rslides{
+		h2{
+			font-size: 2em;
+		}
+		h3{
+			font-size: 1em;
+			margin-top: 0.5em;
+		}
+	}
+	.about{
+		p{
+			font-size: 17px;
+		}
+	}
+	.statements{
+		font-size: 10px;
+	}
+	.calltoaction{
+		img{
+			max-height: 250px;
+		}
+	}
+}
+@media (max-width: 425px){
+	html, body{
+		overflow-x: hidden;
 	}
 }
